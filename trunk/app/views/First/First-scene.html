@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>PhoneGap Demo</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<script language="javascript" type="text/javascript" src="/usr/palm/frameworks/mojo/mojo.js" x-mojo-version="1"></script>
+		<script language="javascript" type="text/javascript" src="phonegap.js"></script>
+		<script language="javascript" type="text/javascript" src="js/controller.js"></script>
+		<script language="javascript" type="text/javascript" src="js/emile.min.js"</script>
+		<script language="javascript" type="text/javascript" src="js/main.js"</script>
+		<link rel="stylesheet" href="assets/master.css" type="text/css" media="screen" title="no title" charset="utf-8">		
+    	<META NAME="Generator" CONTENT="Nokia WRT plug-in for Aptana Studio 2.0.0" />
+	</head>
+	<body>
+		<div class="body" onload="init()">
+			
+		<div class="header">Baby Logger</div>
+		
+		<div id="menu-feeding" class="menu-item" onclick="changeView(event);"><span>Feeding</span></div>
+		<div id="view-feeding" class="view">
+			<div id="info">
+				<h4>Info</h4>
+				<p>
+				Click a side to start the timer.  Click pause to stop timer.  Time is automatically saved, click discard to erase.
+				</p>
+			</div>
+			<div id="shrunkencontainer">
+					<div id="time"><b>Time:</b></div>
+			</div>
+			<table width="300"><tr> 			
+			 
+				<td width="100"> 
+					<div class="button-table" onclick="start('left');">Left</div>
+				</td> 
+
+				<td width="100"> 
+					<div class="button-table" onclick="pause();">||</div>
+				</td> 
+
+				<td width="100"> 
+					<div class="button-table" onclick="start('right');">Right</div>
+				</td> 
+			</tr></table>
+			<div class="button" onclick="complete();">Complete</div>
+			<div class="button" onclick="discard();">Discard</div>
+			<div id="spacer" style="display:none"></div>
+			<div class="button-small" onclick="back();">back</div>
+		</div>
+		
+		<!--<div id="menu-nap" class="menu-item" onclick="changeView(event);"><span>Nap</span></div>
+		<div id="view-nap" class="view">
+			<div class="button" onclick=";"></div>
+			<div class="button-small" onclick="back()">back</div>
+		</div>
+		</div>
+		
+		<div id="menu-diaper" class="menu-item" onclick="changeView(event);"><span>Diaper</span></div>
+		<div id="view-diaper" class="view">
+			<div class="button" onclick=";"></div>
+			<div class="button-small" onclick="back()">back</div>
+		</div>
+		</div>-->
+		
+		<div id="menu-history" class="menu-item" onclick="changeView(event);"><span>History</span></div>
+		<div id="view-history" class="view">
+			<div id="feedingHistory">
+			
+			</div>
+			<div class="button" onclick="showHistory();">Show History</div>
+			<div class="button" onclick="clearHistory();">Clear</div>
+			<div id="spacer" style="display:none"></div>
+			<div class="button-small" onclick="back()">back</div>
+		</div>
+		
+		
+		<div id="spacer" style="display:none"></div>
+		
+		</div>
+	</body>
+</html>
+ 
