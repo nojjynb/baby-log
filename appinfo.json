@@ -1,0 +1,9 @@
+{
+	"id": "com.nojco.wildabeasttest",
+	"version": "1.0.0",
+	"vendor": "Nojco",
+	"type": "web",
+	"main": "index.html",
+	"title": "Wildabeast Test",
+	"icon": "icon.png"
+}
