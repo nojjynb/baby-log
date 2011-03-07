@@ -39,10 +39,14 @@ var changeView = function (e) {
 		$("spacer").style.display = "block";
 		window.location = "#" + menuId;
 		$(viewId).style.display = "block";
-		emile(viewId, 'height:450px', {duration: 800});
+		// A fixed size has a nice draw animation, but 100% fits properly
+		emile(viewId, 'height:100%', {duration: 800});
 		setTimeout('$("spacer").style.display = "none";', 800);
 		current_menu = menuId;
 		current_view = viewId;
+		alert(divh);
+		
+		$(viewId).style.height = divh;
 	} catch (ex) { debug.log(ex.name + ": " + ex.message) }
 }
 

@@ -37,28 +37,28 @@ run:
 	palm-launch.bat com.nojco.babylog
 	
 copy_js:
-	cp lib/phonegap.js js/phonegap.js
+	cp lib/phonegap.js scripts/phonegap.js
 	
 js: lib/phonegap.js
 
-lib/phonegap.js: js/palm-js/phonegap.js.base js/palm-js/acceleration.js js/palm-js/accelerometer.js js/palm-js/audio.js js/palm-js/camera.js js/palm-js/contacts.js js/palm-js/debugconsole.js js/palm-js/device.js js/palm-js/file.js js/palm-js/geolocation.js js/palm-js/map.js js/palm-js/network.js js/palm-js/notification.js js/palm-js/orientation.js js/palm-js/position.js js/palm-js/sms.js js/palm-js/storage.js js/palm-js/telephony.js
+lib/phonegap.js: scripts/palm-scripts/phonegap.js.base scripts/palm-scripts/acceleration.js scripts/palm-scripts/accelerometer.js scripts/palm-scripts/audio.js scripts/palm-scripts/camera.js scripts/palm-scripts/contacts.js scripts/palm-scripts/debugconsole.js scripts/palm-scripts/device.js scripts/palm-scripts/file.js scripts/palm-scripts/geolocation.js scripts/palm-scripts/map.js scripts/palm-scripts/network.js scripts/palm-scripts/notification.js scripts/palm-scripts/orientation.js scripts/palm-scripts/position.js scripts/palm-scripts/sms.js scripts/palm-scripts/storage.js scripts/palm-scripts/telephony.js
 	$(MKPATH) lib
 	$(RM_F) $@
-	$(CAT) js/palm-js/phonegap.js.base >> $@
-	$(CAT) js/palm-js/acceleration.js >> $@
-	$(CAT) js/palm-js/accelerometer.js >> $@
-	$(CAT) js/palm-js/audio.js >> $@
-	$(CAT) js/palm-js/camera.js >> $@
-	$(CAT) js/palm-js/contacts.js >> $@
-	$(CAT) js/palm-js/debugconsole.js >> $@
-	$(CAT) js/palm-js/device.js >> $@
-	$(CAT) js/palm-js/file.js >> $@
-	$(CAT) js/palm-js/geolocation.js >> $@
-	$(CAT) js/palm-js/map.js >> $@
-	$(CAT) js/palm-js/network.js >> $@
-	$(CAT) js/palm-js/notification.js >> $@
-	$(CAT) js/palm-js/orientation.js >> $@
-	$(CAT) js/palm-js/position.js >> $@
-	$(CAT) js/palm-js/sms.js >> $@
-	$(CAT) js/palm-js/storage.js >> $@
-	$(CAT) js/palm-js/telephony.js >> $@
+	$(CAT) scripts/palm-scripts/phonegap.js.base >> $@
+	$(CAT) scripts/palm-scripts/acceleration.js >> $@
+	$(CAT) scripts/palm-scripts/accelerometer.js >> $@
+	$(CAT) scripts/palm-scripts/audio.js >> $@
+	$(CAT) scripts/palm-scripts/camera.js >> $@
+	$(CAT) scripts/palm-scripts/contacts.js >> $@
+	$(CAT) scripts/palm-scripts/debugconsole.js >> $@
+	$(CAT) scripts/palm-scripts/device.js >> $@
+	$(CAT) scripts/palm-scripts/file.js >> $@
+	$(CAT) scripts/palm-scripts/geolocation.js >> $@
+	$(CAT) scripts/palm-scripts/map.js >> $@
+	$(CAT) scripts/palm-scripts/network.js >> $@
+	$(CAT) scripts/palm-scripts/notification.js >> $@
+	$(CAT) scripts/palm-scripts/orientation.js >> $@
+	$(CAT) scripts/palm-scripts/position.js >> $@
+	$(CAT) scripts/palm-scripts/sms.js >> $@
+	$(CAT) scripts/palm-scripts/storage.js >> $@
+	$(CAT) scripts/palm-scripts/telephony.js >> $@
