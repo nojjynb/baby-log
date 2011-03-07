@@ -90,14 +90,11 @@ textarea, input {
 
 .button-small {
 	background:			url(button_sm.png) no-repeat;
-	position:			absolute;
 	width:				100px;
 	height:				38px;
 	text-align:			center;
 	padding:			8px 0px;
 	font-size:			1.1em;
-	left:				10px;
-	bottom:				10px;
 }
 
 .button-table {

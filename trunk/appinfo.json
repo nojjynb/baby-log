@@ -1,9 +1,9 @@
 {
-	"id": "com.nojco.wildabeasttest",
+	"id": "com.nojco.babylog",
 	"version": "1.0.0",
 	"vendor": "Nojco",
 	"type": "web",
 	"main": "index.html",
-	"title": "Wildabeast Test",
-	"icon": "icon.png"
+	"title": "Baby Log",
+	"icon": "favicon.ico"
 }
