@@ -1,0 +1,14 @@
+[
+    {"source": "app/assistants/stage-assistant.js"},
+	{"source": "/usr/palm/frameworks/media/media.js"},
+    {
+        "scenes": "First",
+        "source": "app/assistants/First-assistant.js"
+    },
+	
+		{"source": "feeding.js"},
+		{"source": "history.js"},
+		{"source": "main.js"},
+		{"source": "mainScreen.js"},
+		{"source": "phonegap.js"}
+]

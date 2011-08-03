@@ -1,0 +1,9 @@
+{
+	"id": "com.nojco.babylog",
+	"version": "1.0.0",
+	"vendor": "Nojco",
+	"type": "web",
+	"main": "index.html",
+	"title": "Baby Log",
+	"icon": "icon.jpg"
+}
